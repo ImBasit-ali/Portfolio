@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Ali - Flutter Developer CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            padding: 30px 40px 25px;
+            border-bottom: 3px solid #1976d2;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 13px;
+            color: #444;
+            margin-top: 8px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .separator {
+            margin: 0 5px;
+            color: #666;
+        }
+        
+        .content {
+            padding: 30px 40px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .project {
+            margin-bottom: 18px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        
+        .project-title {
+            font-size: 15px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+        
+        .project-description {
+            color: #444;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+        
+        .project-features {
+            margin-top: 6px;
+            margin-left: 18px;
+        }
+        
+        .project-features li {
+            color: #444;
+            margin-bottom: 4px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .education-item {
+            margin-bottom: 8px;
+        }
+        
+        .education-degree {
+            font-size: 15px;
+            color: #1a1a1a;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .education-school {
+            font-size: 13px;
+            color: #444;
+        }
+        
+        .skills-text {
+            color: #444;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        
+        .link {
+            color: #1976d2;
+            text-decoration: underline;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            .header {
+                padding: 20px 30px 15px;
+            }
+            .content {
+                padding: 20px 30px;
+            }
+            .section {
+                margin-bottom: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header, .content {
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 26px;
+            }
+            .project-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>Basit Ali</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    Bahawalpur, Pakistan
+                </div>
+                <span class="separator">|</span>
+                <div class="contact-item">
+                    <a href="mailto:your.email@gmail.com" class="link">devbasitpy@gmail.com</a>
+                </div>
+                <span class="separator">|</span>
+                <div class="contact-item">
+                    +92 3297802314
+                </div>
+            </div>
+            <div class="contact-info" style="margin-top: 6px;">
+                <div class="contact-item">
+                    <a href="#" class="link">Portfolio</a>
+                </div>
+                <span class="separator">|</span>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/basit-ali-2902aa333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">LinkedIn</a>
+                </div>
+                <span class="separator">|</span>
+                <div class="contact-item">
+                    <a href="https://github.com/" class="link">Github</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="project">
+                    <div class="project-title">Secure Vault App (Flutter)</div>
+                    <div class="project-description">
+                        Developed a comprehensive media security application featuring encrypted storage for sensitive photos, videos, and documents with Hive local database for optimal offline performance and data persistence.
+                    </div>
+                    <ul class="project-features">
+                        <li>Implemented secure media encryption and decryption using industry-standard algorithms for protecting user data.</li>
+                        <li>Integrated PIN/biometric authentication for enhanced security and user privacy.</li>
+                        <li>Built efficient local storage solution with Hive NoSQL database for fast data retrieval.</li>
+                        <li>Designed intuitive gallery interface with support for multiple media formats and fast search capabilities.</li>
+                    </ul>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Bookkeeping App (Flutter)</div>
+                    <div class="project-description">
+                        Created a full-featured accounting application using Flutter and Firebase for small businesses to manage financial records with real-time cloud synchronization and secure data storage.
+                    </div>
+                    <ul class="project-features">
+                        <li>Implemented real-time transaction tracking and categorization with Firebase Firestore for cloud data storage.</li>
+                        <li>Developed user authentication system and multi-device synchronization for seamless cross-platform experience.</li>
+                        <li>Built income and expense management features with detailed reporting and visual charts for financial insights.</li>
+                        <li>Created export functionality for generating financial reports with responsive UI design.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="education-degree">Bachelor of Computer Science (BSCS)</div>
+                    <div class="education-school">Cholistan University Of Veterinary & Animal Sciences - CUVAS Bahawalpur</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-text">
+                    Flutter | Dart | Firebase | Hive Database | SQLite | Cloud Firestore | Provider | Riverpod | BLoC | GetX | Git | GitHub | Android Development | iOS Development | REST API | State Management | Encryption | Material Design | Responsive UI | VS Code | Android Studio
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
